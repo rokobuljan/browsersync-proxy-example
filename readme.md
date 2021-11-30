@@ -21,3 +21,6 @@ Run example:
 ```sh
 npm run dev
 ```
+
+Default server: `localhost:3000`, change this params in `bs-config.js`  
+will be proxied to `localhost:5000` - open this one in browser for development with *live reload*.
