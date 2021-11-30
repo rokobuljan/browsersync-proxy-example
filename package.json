@@ -1,0 +1,26 @@
+{
+  "name": "phpsync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "tsc": "tsc --watch",
+    "sass": "sass --watch src:dist",
+    "bs": "browser-sync start --config bs-config.js",
+    "dev": "concurrently -n server,sass,tsc,browsersync \"npm run server\" \"npm run sass\" \"npm run tsc\" \"npm run bs\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15",
+    "sass": "^1.43.5",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
